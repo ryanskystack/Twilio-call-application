@@ -23,11 +23,12 @@ class App extends Component {
     super(props);
     this.state = {
       phoneNumber: '',
-      response: ''
+      response: '',
+      questions: {}
     };
   }
 
-  UNSAFE_componentWillMount  = () => {
+  UNSAFE_componentWillMount = () => {
     this.selectedCheckboxes = new Set();
   }
 
@@ -40,17 +41,25 @@ class App extends Component {
   }
 
   myChangeHandler = (event) => {
-    this.setState({ phoneNumber: event.target.value,response: '' });
+    this.setState({ phoneNumber: event.target.value, response: '', questions: {}, });
   }
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
-    let newState = {};
+    const newState = Object.assign({}, this.state);
+    console.log('')
+    const questions = [];
+
     for (const element of this.selectedCheckboxes) {
-      for (let index = 0; index < this.selectedCheckboxes.size; index++) {
-        console.log(element, 'is selected.');
-        newState = Object.assign(this.state, { [index]: element });
-      }
+      console.log('element', element);
+      questions.push(element);
+    };
+
+    console.log('questions:', questions);
+    for (let index = 0; index < questions.length; index++) {
+      newState['questions'][index + 1] = questions[index];
     }
+    console.log('newState:', newState);
+
     this.setState(newState);
 
 
@@ -61,10 +70,25 @@ class App extends Component {
     if (this.state.phoneNumber === '') {
       alert('Please input one mobile number.')
     }
+    let request = { phoneNumber: this.state.phoneNumber };
+    console.log("Object.values(this.state.questions):", Object.values(this.state.questions))
+    let questionArr = Object.values(this.state.questions);
+    for (let i = 0; i < questionArr.length; i++) {
+      request[i + 1] = questionArr[i];
+    };
 
-    console.log('state:', this.state);
-    let questions = this.state;
-    axios.post('https://triggertwilio.azurewebsites.net/api/triggertwilio', { questions })
+    console.log('request:', request);
+
+    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+    // axios.post(
+    //   'https://triggertwilio.azurewebsites.net/api/triggertwilio',
+    //   // { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //   // {'Access-Control-Allow-Origin':'*'},
+    //   // {'withCredentials': false},
+    //   { questions },
+    // )
+    axios.post('https://triggertwilio.azurewebsites.net/api/triggertwilio', request)
       .then(res => {
         console.log(res);
         console.log(res.data);
