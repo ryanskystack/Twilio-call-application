@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Twilio-call-application/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/Twilio-call-application/static/js/main.0bb3bed2.chunk.js",
-    "main.js.map": "/Twilio-call-application/static/js/main.0bb3bed2.chunk.js.map",
+    "main.js": "/Twilio-call-application/static/js/main.839698f0.chunk.js",
+    "main.js.map": "/Twilio-call-application/static/js/main.839698f0.chunk.js.map",
     "runtime-main.js": "/Twilio-call-application/static/js/runtime-main.d5a188c0.js",
     "runtime-main.js.map": "/Twilio-call-application/static/js/runtime-main.d5a188c0.js.map",
-    "static/js/2.4c571c50.chunk.js": "/Twilio-call-application/static/js/2.4c571c50.chunk.js",
-    "static/js/2.4c571c50.chunk.js.map": "/Twilio-call-application/static/js/2.4c571c50.chunk.js.map",
+    "static/js/2.512744f4.chunk.js": "/Twilio-call-application/static/js/2.512744f4.chunk.js",
+    "static/js/2.512744f4.chunk.js.map": "/Twilio-call-application/static/js/2.512744f4.chunk.js.map",
     "index.html": "/Twilio-call-application/index.html",
-    "precache-manifest.87fe21075772c7f12e027b9a42af156a.js": "/Twilio-call-application/precache-manifest.87fe21075772c7f12e027b9a42af156a.js",
+    "precache-manifest.22342eb780d12c33ae7066ab595f872d.js": "/Twilio-call-application/precache-manifest.22342eb780d12c33ae7066ab595f872d.js",
     "service-worker.js": "/Twilio-call-application/service-worker.js",
     "static/css/main.d498bfb3.chunk.css.map": "/Twilio-call-application/static/css/main.d498bfb3.chunk.css.map",
-    "static/js/2.4c571c50.chunk.js.LICENSE.txt": "/Twilio-call-application/static/js/2.4c571c50.chunk.js.LICENSE.txt"
+    "static/js/2.512744f4.chunk.js.LICENSE.txt": "/Twilio-call-application/static/js/2.512744f4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d5a188c0.js",
-    "static/js/2.4c571c50.chunk.js",
+    "static/js/2.512744f4.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.0bb3bed2.chunk.js"
+    "static/js/main.839698f0.chunk.js"
   ]
 }
