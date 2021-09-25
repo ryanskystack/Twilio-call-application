@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Twilio-call-application/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/Twilio-call-application/static/js/main.016b816f.chunk.js",
-    "main.js.map": "/Twilio-call-application/static/js/main.016b816f.chunk.js.map",
+    "main.js": "/Twilio-call-application/static/js/main.7fef1c2e.chunk.js",
+    "main.js.map": "/Twilio-call-application/static/js/main.7fef1c2e.chunk.js.map",
     "runtime-main.js": "/Twilio-call-application/static/js/runtime-main.d5a188c0.js",
     "runtime-main.js.map": "/Twilio-call-application/static/js/runtime-main.d5a188c0.js.map",
     "static/js/2.4c571c50.chunk.js": "/Twilio-call-application/static/js/2.4c571c50.chunk.js",
     "static/js/2.4c571c50.chunk.js.map": "/Twilio-call-application/static/js/2.4c571c50.chunk.js.map",
     "index.html": "/Twilio-call-application/index.html",
-    "precache-manifest.0f61149b5edfbbdfb5cb1357a2a5af12.js": "/Twilio-call-application/precache-manifest.0f61149b5edfbbdfb5cb1357a2a5af12.js",
+    "precache-manifest.e98c93c18c10e82e99336de35bfde4a4.js": "/Twilio-call-application/precache-manifest.e98c93c18c10e82e99336de35bfde4a4.js",
     "service-worker.js": "/Twilio-call-application/service-worker.js",
     "static/css/main.d498bfb3.chunk.css.map": "/Twilio-call-application/static/css/main.d498bfb3.chunk.css.map",
     "static/js/2.4c571c50.chunk.js.LICENSE.txt": "/Twilio-call-application/static/js/2.4c571c50.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d5a188c0.js",
     "static/js/2.4c571c50.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.016b816f.chunk.js"
+    "static/js/main.7fef1c2e.chunk.js"
   ]
 }
