@@ -46,19 +46,15 @@ class App extends Component {
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
     const newState = Object.assign({}, this.state);
-    console.log('')
     const questions = [];
 
     for (const element of this.selectedCheckboxes) {
-      console.log('element', element);
       questions.push(element);
     };
 
-    console.log('questions:', questions);
     for (let index = 0; index < questions.length; index++) {
       newState['questions'][index + 1] = questions[index];
     }
-    console.log('newState:', newState);
 
     this.setState(newState);
 
@@ -71,13 +67,11 @@ class App extends Component {
       alert('Please input one mobile number.')
     }
     let request = { phoneNumber: this.state.phoneNumber };
-    console.log("Object.values(this.state.questions):", Object.values(this.state.questions))
+    
     let questionArr = Object.values(this.state.questions);
     for (let i = 0; i < questionArr.length; i++) {
       request[i + 1] = questionArr[i];
     };
-
-    console.log('request:', request);
 
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
     axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
