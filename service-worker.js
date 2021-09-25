@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Twilio-call-application/precache-manifest.faa975eaeda5cea79d4eb362e50be731.js"
+  "/Twilio-call-application/precache-manifest.9bca73fbb40c247bae57d1c6273743d5.js"
 );
 
 self.addEventListener('message', (event) => {
