@@ -4,7 +4,7 @@ import axios from "axios";
 const App = () => {
   const [phone, setPhone] = useState('');
   const [questions, setQuestions] = useState([{ id: 1, content: '' }]);
-  const [response, setResponse] = useState();
+  const [response, setResponse] = useState('');
   console.log('questions:', questions);
 
   const phoneChangeHandler = (event) => {
@@ -63,7 +63,7 @@ const App = () => {
   };
   
   return (
-    { response } !== null
+    response  ===''
       ?
       (
         <div className="container">
