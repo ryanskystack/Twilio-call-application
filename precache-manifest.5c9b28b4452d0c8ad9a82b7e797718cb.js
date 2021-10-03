@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "897086a00cf5f3f0a4f39e55283fb05c",
+    "revision": "504924a7f4c6cabe1d66323cd1dfbaf2",
     "url": "/Twilio-call-application-FrontEnd-/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Twilio-call-application-FrontEnd-/static/js/2.9b9dc8b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "406ad1a5e4dcbb0897b5",
-    "url": "/Twilio-call-application-FrontEnd-/static/js/main.85aa0fe8.chunk.js"
+    "revision": "df2826df90e520e9143b",
+    "url": "/Twilio-call-application-FrontEnd-/static/js/main.1bd07598.chunk.js"
   },
   {
     "revision": "c19576c0ea0192ec72c4",
